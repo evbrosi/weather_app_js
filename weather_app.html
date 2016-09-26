@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Weather App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Official Bootstrap -->
+  <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.css">
+  <!-- Our project CSS -->
+  <link rel="stylesheet" href="weather_app_css.css">
+</head>
+
+<body>
+
+  <div>
+    <input type="text" id="zip" placeholder="Zip Code">
+    <button type="button" class="btn btn-success" id="getZip">+</button>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card card-block">
+        <h2 class="card-title">
+          <a id="printTown"></a>
+
+        </h2>
+        <p class="card-text"></p>
+        <h1 id="printTemperature"> &deg;</h1>
+        <h3 id=printConditions></h3>
+        <div class="row">
+          <div class="col-sm-3"> Low </div>
+          <div class="col-sm-5"> Percepitation </div>
+          <div class="col-sm-4"> High </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5" id=printLow> </div>
+          <div class="col-sm-3" id="printPrecipitation"> </div>
+          <div class="col-sm-4" id=printHigh> </div>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-success" id="add">+</button>
+  </div>
+
+
+  <!-- Official JQuery -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <!-- Official Bootstrap -->
+  <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+  <!-- Our project JS -->
+  <script src="weather_app_js.js"></script>
+
+</body>
+
+</html>

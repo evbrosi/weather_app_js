@@ -1,0 +1,64 @@
+.first_btn {
+    padding: 5px;
+    margin: 10px;
+}
+
+.card {
+    background-color: #ff6600;
+    padding: 10px 24px;
+    height: 250px;
+    width: 280px;
+    border: 0 none;
+    color: white;
+    border-radius: 30px;
+    margin: 15px;
+    border-block-end-color: #0099cc;
+}
+
+.card span {
+    font-size: 24px;
+    color: white;
+}
+
+.card-bg {
+    background-size: cover;
+}
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: #0099cc;
+    color: #ffffff;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #33a6cc;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
+
+.card_btn{
+    padding: 30px;
+    margin: 5px;
+}
+
+#printTemperature{
+    color: #ffffff;
+}
+
+.card-title{
+    color: white;
+}
