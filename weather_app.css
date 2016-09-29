@@ -1,0 +1,35 @@
+#printTemperature{
+    color: #ffffff;
+}
+
+.card {
+    background-color: #ff6600;
+    padding: 10px 24px;
+    height: 300px;
+    width: 300px;
+    border: 0 none;
+    color: white;
+    border-radius: 30px;
+    margin: 15px;
+}
+
+.card span {
+    font-size: 24px;
+    color: white;
+}
+
+.card-bg {
+    background-size: cover;
+}
+
+#removal {
+    float: right;
+}
+
+.nav {
+    background-color: lightgrey;
+}
+
+.navbar-brand {
+    background-color: #ff6600;
+}

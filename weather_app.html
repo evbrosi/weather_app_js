@@ -8,16 +8,98 @@
   <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
   <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.css">
   <!-- Our project CSS -->
-  <link rel="stylesheet" href="weather_app_css.css">
+  <link rel="stylesheet" href="weather_app.css">
 </head>
 
-<body>
 
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand">Eagle's Weatherly App</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" id="zip" placeholder="Zip Code">
+          <button type="button" class="btn btn-success" id="getZip">+</button>
+          </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://darksky.net/poweredby/" target="_blank">Powered By DarkSky's!</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+<body>
+<!--
   <div>
     <input type="text" id="zip" placeholder="Zip Code">
     <button type="button" class="btn btn-success" id="getZip">+</button>
   </div>
+--!>
+        <!-- Weather cards -->
+        <div class="container">
+            <div class="row" id="templateGoesHere">
+            </div>
+        </div>
+        <!-- Template Div -->
+            <div id="template" style="display:none">
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-block" id="cardie">
+                    <h2 class="card-title">
+                        <a id="printTown"> @@printTown@@</a>
+                        </h2>
+                        <p class="card-text"></p>
+                        <h1 id="printTemperature">@@temperature@@&#8457</h1>
+                        <h3 id="printConditions">@@conditions@@</h3>
+                        <div class="row">
+                            <div class="col-sm-5 low"> @@low@@&#8457</div>
+                            <div class="col-sm-3 percepitation"> @@precipitation@@ </div>
+                            <div class="col-sm-4 high"> @@highTemp@@&#8457</div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-3"> Low </div>
+                          <div class="col-sm-5"> Percepitation </div>
+                          <div class="col-sm-4"> High </div>
+                        </div>
+                       <button type="button" class="delete btn-info" >X</button>
+                    </div>
+                </div>
+            </div>
 
+
+
+<!--
+                <div class="col-xs-12 weatherCard">
+                    <div class="card-block">
+                        <h1 class="card-title currentTemperature">Current Temp: @@currentTemp@@&#8457</h1>
+                        <ul class="list-group list-group-flush cardList">
+                            <li class="list-group-item cityState">City/State: @@cityState@@</li>
+                            <li class="list-group-item conditions">Current Conditions: @@conditions@@</li>
+                            <li class="list-group-item maxTemp">High Temp: @@maxTemp@@&#8457</li>
+                            <li class="list-group-item minTemp">Low Temp: @@minTemp@@&#8457</li>
+                            <li class="list-group-item rain">Chance of Precipitation: @@rain@@%</li>
+                        </ul>
+                    </div>
+                </div>
+--!>
+
+
+<!--
   <div class="row">
     <div class="col-sm-6">
       <div class="card card-block">
@@ -43,7 +125,7 @@
 
     <button type="button" class="btn btn-success" id="add">+</button>
   </div>
-
+--!>
 
   <!-- Official JQuery -->
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -51,7 +133,7 @@
   <!-- Official Bootstrap -->
   <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
   <!-- Our project JS -->
-  <script src="weather_app_js.js"></script>
+  <script src="weather_app.js"></script>
 
 </body>
 
